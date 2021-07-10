@@ -28,8 +28,13 @@ perc50 = np.percentile(df["height(cm)"],50)
 perc75 = np.percentile(df["height(cm)"],75)
 print("The 25th , 50th , and 75th percentiles are :", perc25,",", perc50, ",", perc75, "respectively")
 
-# representation
+# histogram
 matplotlib.use('TkAgg')
-x = df["height(cm)"]
-plt.hist(x)
+plt.hist(df["height(cm)"])
+plt.hist(mean,color='red',label="mean")
+plt.hist(median,color='darkgreen',label="median")
+plt.hist(mode,color='black',label="mode")
+plt.legend()
+plt.xlabel("heights")
+plt.ylabel("frequency")
 plt.show()
