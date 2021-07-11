@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-df = pd.read_csv('./projects/project2/births.csv')
+df = pd.read_csv('./projects/project2/births.csv') ########## filepath
 
 # print(df.describe())
 # print(df)
