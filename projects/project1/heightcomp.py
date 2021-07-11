@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('.\projects\project1\heights.csv')
+df = pd.read_csv('.\projects\project1\heights.csv') ###
 
 # mean,median,mode
 mean = df["height(cm)"].mean()
